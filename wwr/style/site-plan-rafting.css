@@ -16,8 +16,8 @@ Fonts are separated by a | */
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Ubuntu, Ubuntu_mono, sans-serif";
+  --paragraph-font: Rubik, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #e7c24f;  /* headlines on a white background */ 
