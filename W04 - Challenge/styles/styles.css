@@ -1,0 +1,40 @@
+body {
+    background-color: pink;
+    text-align: center;
+}
+footer {
+    color: black;
+    font-size: large;
+}
+img {
+    width: 10%;
+    height: 10%;
+
+}
+div.centered {
+	text-align: center;
+   	}
+ol { 
+	display: inline-block; 
+	text-align: left; 
+    font-weight: 900;
+	}
+.quote {
+      color: white;
+        }
+.quote2 {
+
+    color: white;
+    font-size: 550%;
+    max-width: 8in;
+    text-align: center;
+    margin: 0 auto;
+}
+h1 {
+    color: white;
+    font-size: 200%;
+    }
+h1:hover {
+    color:black;
+    font-size: 200%;
+}
