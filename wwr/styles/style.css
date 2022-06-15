@@ -41,8 +41,11 @@ nav a{
     position: relative;
     color: antiquewhite;
 }
-#hero #hero-img{
+#hero #hero-img {
     width: 100%;
+}
+#top-img #bottom-img {
+    width:100%;
 }
 #hero-msg{
     position: absolute;
@@ -156,4 +159,46 @@ footer .social{
 footer h3 a{
     text-decoration: none;
     color: white;
+}
+footer {
+    margin-top: 25px;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
 }
