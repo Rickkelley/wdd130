@@ -161,11 +161,12 @@ footer h3 a{
 footer {
     margin-top: 25px;
 }
-#top #bottom {
-    height: auto;
-    width: 99%;
-}
+
 @media screen and (max-width: 900px) {
+    #top #bottom {
+        height: auto;
+        width: 99%;
+    }
 
     #hero, .home-grid {
         display: block;
