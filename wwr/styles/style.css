@@ -44,9 +44,7 @@ nav a{
 #hero #hero-img {
     width: 100%;
 }
-#top-img #bottom-img {
-    width:100%;
-}
+
 #hero-msg{
     position: absolute;
     top:200px;
@@ -163,7 +161,12 @@ footer h3 a{
 footer {
     margin-top: 25px;
 }
+#top #bottom {
+    height: auto;
+    width: 99%;
+}
 @media screen and (max-width: 900px) {
+
     #hero, .home-grid {
         display: block;
         height: auto;
