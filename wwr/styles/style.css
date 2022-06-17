@@ -258,6 +258,11 @@ footer {
     color: black;
     background-color: antiquewhite;
 }
+.contactcontent {
+    text-align: center;
+    color: black;
+    background-color: antiquewhite;  
+}
 
 @media screen and (max-width: 900px) {
 
