@@ -69,40 +69,59 @@
 </head>
 <body>
     <header>
-        
-        <img class="logo" src="images/Lets Talk Podcasts-logos.jpeg" alt="Lets Talk Podcasts logo">                       
-        
+        <!--Logo-->
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/Lets Talk Podcasts-logos.jpeg" alt="Lets Talk Podcasts logo">                       
+        </a>
 
-            <nav>
+        <!--The navbar-->
+        <nav>
             <a href="index.html">Home</a>
             <a href="review.html">Reviews</a>
             <a href="contactus.html">Contact Us</a>
         </nav>
-
-        <img class="logo" src="images/Lets Talk Podcasts-logos.jpeg" alt="Lets Talk Podcasts logo">        
     </header>
+    
     <p>
-        Welcome, to the home page of let’s talk podcasts. We’re glad you’re here.   
+        Here is the part where we ask for your help. We want to know what podcasts you like. Please either complete the form below to send us a message, or come find us on any of the Social Media platforms below and let us know. We need your suggestions to keep this site alive and growing. 
       </p>
-      <img src="images/sign.jpg" alt="person listening to a podcast">
-      <p>
-        For those who don’t know a podcast, generally speaking, is like a radio show.  You will have one or more individuals who host the show, and they can be any length. Anywhere from a 60 second news snippet to a 3 hour in -depth interview.  Some of them tell you a story, similar to the way you might have come to expect as you sat listening to the radio back before television in say 1922. 
-      </p>
-      <p>
-        Here at let’s talk podcasts our goal is to talk about a few of them. With there being literally millions of podcasts out there today all vying for your time, we understand that it can be hard trying to determine which one(s) you want to listen to. 
-      </p>
-      <p>
-        We are not paid by or affiliated with any podcast, that way we can offer our genuine un-biased opinion on some podcasts. We won’t tell you to go listen to any particular podcast, we leave that up to you to decide. But for example, if you’re maybe the parent of a 17-year-old high school student, and are curious what they are listening to for example. We will interview a couple high school students and ask them what they listen to & what makes it appealing to them. 
-      </p>
-      <p>
-        Are you a new mother? A new dad? Are you interested in Football? How about Food? How about soft drinks? Just in case you were wondering, yes there are podcasts about all those topics as well, and plenty more. 
-      </p>
-      <br>
-      <p>
-        Do you happen to have a favorite podcast? Do you just have some tips & or suggestions for us? If so, we want to hear from you. Click on the contact us link, and let us know about it. We just might feature it, and you, here on our website.   
-      </p>
-      <img src="images/banner.jpg" alt="neon sign in the shape of a microphone">
-
+      <div id="feedback"></div>           
+<form action="/my-handling-form-page" method="post">
+        <ul>
+         <li>
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="user_name">
+         </li>
+         <li>
+           <label for="mail">E-mail:</label>
+           <input type="email" id="mail" name="user_email">
+         </li>
+         <li>
+           <label for="msg">Message:</label>
+           <textarea id="msg" name="user_message"></textarea>
+         </li>
+         <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+       </form>>
+       <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>  
     <footer>
         <h3>Let's Talk Podcasts &copy; 2022 - Rick Kelley</h3>
         <h3><a href="site-plan.html">Site Plan</a></h3>
