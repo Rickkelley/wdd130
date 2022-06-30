@@ -65,7 +65,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #f5e71b;
+    background-color: #F4D35E;
     font-family: Poppins, serif;
 }
 
@@ -84,7 +84,7 @@ header nav a {
     margin-top: 2em;
     display: flex;
     flex-direction: row;
-    background-color: #dd7230;
+    background-color: #F7AA76;
     gap: 1em;
     font-family: Joan, sans-serif;
 }
@@ -96,7 +96,7 @@ header nav a {
 /*Styling the Footer Area*/
 footer {
     text-align: center;
-    background-color: #f5e71b;
+    background-color: #F4D35E;
 }
 
 footer h3 a {
