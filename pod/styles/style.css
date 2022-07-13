@@ -1,4 +1,4 @@
-@import url('href="https://fonts.googleapis.com/css2?family=Joan&family=Poppins:ital,wght@0,200;0,300;0,400;1,300&family=Raleway:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,300&family=Raleway:ital,wght@0,300;0,400;1,100;1,400&display=swap');
 
 /*Social Media Styling*/
 .fa {
@@ -73,7 +73,7 @@ header {
     flex-direction: row;
     justify-content: center;
     background-color: #F4D35E;
-    font-family: Poppins, serif;
+    font-family: Poppins, sans-serif;
     padding: 8px;
 }
 
@@ -130,7 +130,7 @@ ul{
 
 }
 .myp {
-    font-family: 'Raleway', 'Times New Roman', Times, serif;
+    font-family: 'Raleway', 'Times New Roman', Times, sans-serif;
 }
 h1 {
     grid-column: 1/4;
